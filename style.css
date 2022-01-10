@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.coverpage {
+  background: url("./background.jpg");
+  background-size: cover;
+}
+.main {
+  text-align: right;
+  font-size: 80px;
+  padding-right: 10%;
+  color: forestgreen;
+  font-family: cursive;
+}
+.coverdiv {
+  float: right;
+  padding-right: 20%;
+}
+.mode {
+  margin-bottom: 5%;
+  height: 175px;
+}
+.motxt {
+  font-size: 2em;
+  background: indigo;
+  color: ivory;
+  text-decoration: none;
+  background-size: contain;
+  cursor: pointer;
+}
+.whole{
+  background-color:rgb(238, 171, 221);
+}
+.result{
+  padding-left: 40%;
+}
+ .Sbod{
+  display: flex;
+  justify-content: center; 
+}
+.container{
+  background-color: rgb(29, 140, 173);
+  margin: 30px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.title{
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  color: rgb(174, 207, 26);
+}
+.status-action{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  color: rgb(56, 48, 48);
+  height: 20px;
+}
+
+.status span{
+  color: beige;
+}
+.reset{
+  cursor: pointer;
+  color: black;
+}
+.reset:hover{
+  color: bisque;
+}
+.game-grid{
+  background-color:darkslategray;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.cell{
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color:dimgray;
+  background-color: rgb(29, 140, 173);;
+}
+.X::after{
+  content: '✖';
+  font-size: 80px;
+}
+.O::after{
+  content: '○';
+  color: beige;
+  font-size: 125px;
+}
+.result{
+  font-size: 40px;
+  color: rgb(5, 87, 18);
+  font-family: cursive;
+  justify-content: left;
+  padding-left: 43%;
+}
+
+.won::after{
+  color: brown;
+}
