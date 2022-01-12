@@ -30,8 +30,9 @@ function startGame(){
 function handleCell(e){
     if(e.target.classList.length==1){
     turn(e.target.id,huPlayer);
+    if(result.innerHTML===""){
     if(!checkTie()) turn(bestSpot(),aiPlayer);
-    }
+    }}
 }
 function turn(squareId,player){
     board[squareId]=player;
@@ -81,9 +82,9 @@ function checkTie() {
 	return false;
 }
 function minimax(newBoard,player){
-    var availSpots=emptySquares(newBoard);
+    var availSpots=emptySquares();
 
-    if(checkWin(newBoard,player)){
+    if(checkWin(newBoard,huPlayer)){
         return{score:-10};
     }else if(checkWin(newBoard,aiPlayer)){
         return {score:10};
